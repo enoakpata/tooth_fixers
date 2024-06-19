@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+  database:
+    container_name: postgres-csc2022
+    image: postgres:latest
+    ports: 
+      - "5433:5432"
+    volumes:
+      - C:\Users\HP\Documents\csc202-2022-stream1set\tooth-fixers
+    env_file:
+      - toothfixers.env
+
